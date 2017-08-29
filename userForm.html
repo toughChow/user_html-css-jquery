@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="plugins/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="panel">
+        <header>
+            <p id="p-logo-img">
+                <img src="images/logo.png">
+            </p>
+            <h2>用户管理系统</h2>
+            <p id="p-help-quit">
+                <a class="btn-help" href="#">帮助</a>
+                <a class="btn-quit" href="#">退出</a>
+            </p>
+        </header>
+        <content>
+            <div class="left">
+                <p class="p-query"><a class="btn-query" href="userList.html">用户查询</a></p>
+                <p> <a class="btn-add" href="userForm.html">用户新增</a></p>
+            </div>
+            <div class="right">
+                <p class="form-title">新增&编辑用户信息</p>
+                <form class="myForm" action="userList.html">
+                    <p class="myForm-msg">
+                        <label>用户名称：</label>
+                        <input type="text" id="tough" name="username" placeholder="请输入您的用户名!" required="true">
+                    </p>
+                    <p class="myForm-msg">
+                        <label>用户密码：</label>
+                        <input type="password" name="password" placeholder="请输入您的密码!" required="true">
+                    </p>
+                    <p class="myForm-msg">
+                        <label>确认密码：</label>
+                        <input type="password" name="passwordConfirm" placeholder="请输入您的确认密码!" required="true">
+                    </p>
+                    <p class="myForm-msg">
+                        <label>电子邮箱：</label>
+                        <input type="email" name="email" placeholder="请输入您的邮箱!" required="true">
+                    </p>
+                    <p>
+                        <label>性&emsp;&emsp;别：</label>
+                        <label><input type="radio" name="gender" value="男" checked="checked">男</label>
+                         <label><input type="radio" name="gender" value="女">女</label>
+                    </p>
+                    <hr>
+                    <p class="myForm-btn">
+                        <input type="submit" name="" id="myForm-submit" value="保存">
+                        <input type="reset" name="" value="重置">
+                        <input type="button" name="" value="返回">
+                    </p>
+                </form>
+            </div>
+        </content>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>

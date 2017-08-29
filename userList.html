@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="plugins/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="panel">
+        <header>
+            <p id="p-logo-img">
+                <img src="images/logo.png">
+            </p>
+            <h2>用户管理系统</h2>
+            <p id="p-help-quit">
+                <a class="btn-help" href="#">帮助</a>
+                <a class="btn-quit" href="#">退出</a>
+            </p>
+        </header>
+        <content>
+            <div class="left">
+                <p class="p-query"><a class="btn-query" href="userList.html">用户查询</a></p>
+                <p> <a class="btn-add" href="userForm.html">用户新增</a></p>
+            </div>
+            <div class="right">
+                <p class="myList-query">
+                    <label>用户名称：</label>
+                    <input type="text" name="" required="true">
+                    <button type="submit" name="" id="myList-query" >查询</button>
+                </p>
+                <table class="myList-table" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="">用户名称
+                            </td>
+                            <td>
+                                职业
+                            </td>
+                            <td>
+                                邮箱
+                            </td>
+                            <td>
+                                性别
+                            </td>
+                            <td>
+                                特长
+                            </td>
+                            <td>
+                                操作
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="">轻实训
+                            </td>
+                            <td>
+                                学生
+                            </td>
+                            <td>
+                                tiger@shixun.online
+                            </td>
+                            <td>
+                                男
+                            </td>
+                            <td>
+                                书法、乐器
+                            </td>
+                            <td>
+                                <a href="">编辑</a>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="">王宇宙
+                            </td>
+                            <td>
+                                程序猿
+                            </td>
+                            <td>
+                                mike@qingshixun.com
+                            </td>
+                            <td>
+                                男
+                            </td>
+                            <td>
+                                运动
+                            </td>
+                            <td>
+                                <a href="">编辑</a>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="">张丽丽
+                            </td>
+                            <td>
+                                UI设计
+                            </td>
+                            <td>
+                                jessie@google.com
+                            </td>
+                            <td>
+                                女
+                            </td>
+                            <td>
+                                音乐
+                            </td>
+                            <td>
+                                <a href="">编辑</a>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </content>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
